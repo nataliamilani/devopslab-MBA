@@ -8,3 +8,7 @@ python:
 # Instalação de Módulos que são necessários para a Aplicação.
 install:
   - pip install flask
+
+# Define o script de teste que deve rodar toda vez
+script:
+  - python -m unittest -v test
