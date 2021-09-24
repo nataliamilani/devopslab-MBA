@@ -12,3 +12,10 @@ install:
 # Define o script de teste que deve rodar toda vez
 script:
   - python -m unittest -v test
+
+# Definir o Deploy no Heroku
+deploy:
+  provider: heroku
+  api_key: $HEROKU_API_KEY
+  edge: true 
+  app: devopslab-nataliamilani
